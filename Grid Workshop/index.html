@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Grid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/34e59aa478.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/styles/css/style.css">
+</head>
+
+<body>
+
+    <div>
+        <header>
+            <div class="container">
+                <div class="header__content">
+                    <h2 class="text-small-bold"><span class="text-medium-bold">T</span>Task</h2>
+                    <div class="header__content__properties">
+                        <form action="welcome.html" method="post">
+                            <input type="text" name="search" placeholder="Search anything">
+                        </form>
+                    </div>
+                    <ul class="header__content__properties__links">
+                        <a href="#projects" class="active">Projects</a>
+                        <a href="#settings">Settings</a>
+                        <a href="#help">Help</a>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <main class="row gap-1 mt-10 ">
+            <!-- assign task and home page column -->
+            <div class=" col-5-lg col-5-xl col-12-xs col-12-sm col-6-md">
+                <div class="select">
+                    <div class=" card select__task">
+                        <div class="select__task__header">
+                            <i class="fa-solid fa-user-plus"></i>
+                            <h3 class="text-medium-small-13 ">Assign task to </h3>
+                        </div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="card select__search">
+                        <form action="welcome.html" method="post">
+                            <input type="text" name="search" placeholder="Search anything">
+                        </form>
+                        <div class="select__user">
+                            <div class="user__properties">
+                                <figure>
+                                    <img src="/assets/images/user-girl-bun.webp" alt="the bun girl">
+                                </figure>
+                                <h4 class="text-medium-small-13 ">Angela Smith</h4>
+                            </div>
+                            <span class="text-small-light">15 task on progress</span>
+                        </div>
+                        <div class="select__user selected">
+                            <div class="user__properties ">
+                                <figure>
+                                    <img src="/assets/images/user-girl-straight.webp" alt="the straight hair girl">
+                                </figure>
+                                <h4 class="text-medium-small-13 ">Angela Smith</h4>
+                            </div>
+                            <span class="text-small-light">16 task on progress</span>
+                        </div>
+                        <div class="select__user">
+                            <div class="user__properties">
+                                <figure>
+                                    <img src="/assets/images/user-girl-curl.webp" alt="the curl girl">
+                                </figure>
+                                <h4 class="text-medium-small-13">Angela Smith</h4>
+                            </div>
+                            <span class="text-small-light">16 task on progress</span>
+                        </div>
+                        <div class="select__user">
+                            <div class="user__properties">
+                                <figure>
+                                    <img src="/assets/images/user-boy.webp" alt=" the boy user">
+                                </figure>
+                                <h4 class="text-medium-small-13 ">Angela Smith</h4>
+                            </div>
+                            <span class="text-small-light">16 task on progress</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card homepage">
+
+                    <div class="homepage__content">
+                        <i class="fa-solid fa-ellipsis ellipsis"></i>
+
+                        <h2 class="text-large ">Konsep design homepage</h2>
+                        <div class="homepage__content_properties">
+                            <i class="fa-solid fa-flag"></i> <span class="text-small-light">Due Nov 24</span>
+                        </div>
+                        <p class="text-small-bold-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <div class="progress">
+                            <h4 class=" text-medium-20">Project Progress</h4>
+                            <span class="text-medium-20">32%</span>
+                        </div>
+
+                        <div class="progress-percentage__content__task__bar">
+                            <div class="progress-bar progress-bar-bg-green"></div>
+                        </div>
+                        <div class="user-info">
+
+                            <div class="user_photos">
+                                <figure class="user__photo-primary">
+                                    <img src="/assets/images/user-girl-bun.webp" alt="the bun girl">
+                                </figure>
+                                <figure class="user__photo-secondary">
+                                    <img src="/assets/images/user-girl-curl.webp" alt="the curl hair girl">
+                                </figure>
+                                <figure class="user__photo-last">
+                                    <img src="/assets/images/user-girl-straight.webp" alt="the straight hair girl">
+
+                                </figure>
+                                <span class="text-small-light-medium">+15 people</span>
+
+                            </div>
+
+                            <div class="dots">
+                                <figure>
+                                    <img src="assets/images/dots-circle.webp" alt="">
+                                </figure>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- the progress-project- and activity column-->
+
+            <div class="col-4-lg col-6-md col-12-sm col-12-xs">
+                <div class="progresses card">
+                    <h2 class="text-large-medium">Weekly Progress</h2>
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <p class="text-small-light">Start from Nov 7-14, 2020</p>
+                    <div class="single-chart">
+                        <svg viewBox="0 0 36 36" class="circular-chart green">
+                            <path class="circle-bg" d="M18 2.0845
+                              a 15.9155 15.9155 0 0 1 0 31.831
+                              a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="60, 100" d="M18 2.0845
+                              a 15.9155 15.9155 0 0 1 0 31.831
+                              a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <span class="percentage text-xlarge-semibold">75%</span>
+                        <span class="mission text-small-light">Tasks Completed</span>
+                    </div>
+
+
+                </div>
+                <div class=" card activity">
+                    <h2 class="text-medium-large">Recent Activity</h2>
+                    <div class="activity__item">
+                        <div class="icon bg-blue">
+                            <i class="fa-solid fa-message" style="color: white;"></i>
+                        </div>
+                        <div class="activity__item__content">
+                            <p class="text-small-semibold"><span>Karen</span> leave some comments on Konsep Ilustrasi</p>
+                            <span class="date text-small-light">Aug 10</span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="activity__item">
+                        <div class="icon bg-purple">
+                            <i class="fa-solid fa-pen" style="color: white;"></i>
+                        </div>
+                        <div class="activity__item__content">
+                            <p class="text-small-semibold"><span>Karen</span> leave some comments on Konsep Ilustrasi</p>
+                            <span class="date text-small-light">Aug 10</span>
+                        </div>
+
+                    </div>
+                    <div class="activity__item">
+                        <div class="icon bg-orange">
+                            <i class="fa-solid fa-flag" style="color: white;"></i>
+                        </div>
+                        <div class="activity__item__content">
+                            <p class="text-small-semibold"><span>Karen</span> leave some comments on Konsep Ilustrasi</p>
+                            <span class="date text-small-light">Aug 10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- the radio button and percentages -->
+
+            <div class="col-3-lg col-6-md col-12-sm col-12-xs">
+                <div class="task card">
+                    <h3 class="text-large-medium">Tasks</h2>
+                        <div class="task-item">
+                            <input type="radio" id="task1" name="tasks" />
+                            <label for="task1">
+                                <div class="task-info">
+                                    <div class="task-details">
+                                        <p class="task-name text-medium-small ">Design Homepage</p>
+                                        <span class="task-date text-small-light">Thu, Nov 23</span>
+                                    </div>
+                                    <img src="assets/images/user-girl-bun.webp" alt="User bun hair" class="user-img">
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="task-item">
+                            <input type="radio" id="task2" name="tasks" checked />
+                            <label for="task2">
+                                <div class="task-info">
+                                    <div class="task-details">
+                                        <p class="task-name text-medium-small">Sketsa Ilustrasi</p>
+                                        <span class="task-date text-small-light">Mon, Nov 15</span>
+                                    </div>
+                                    <img src="assets/images/user-girl-straight.webp" alt="User straight"
+                                        class="user-img">
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="task-item">
+                            <input type="radio" id="task3" name="tasks" />
+                            <label for="task3">
+                                <div class="task-info">
+                                    <div class="task-details">
+                                        <p class="task-name text-medium-small">Onboarding Design</p>
+                                        <span class="task-date text-small-light">Wed, Nov 15</span>
+                                    </div>
+                                    <img src="assets/images/user-girl-curl.webp" alt="User curl" class="user-img">
+                                </div>
+                            </label>
+                        </div>
+                </div>
+
+
+                <div class="card progress-percentage">
+                    <div class="progress-percentage__header">
+                        <h2 class="text-large-medium">Task Progress</h2>
+                    </div>
+                    <div class="progress-percentage__content">
+                        <div class="progress-percentage__content__task">
+                            <div class="progress-percentage__content__task__header">
+                                <span class="text-light-medium-21">Copywriting</span>
+                                <span class="text-light-medium-21 task-percent">3/8</span>
+                            </div>
+                            <div class="progress-percentage__content__task__bar">
+                                <div class="progress-bar progress-bar-bg-purple"></div>
+                            </div>
+                        </div>
+                        <div class="progress-percentage__content__task">
+                            <div class="progress-percentage__content__task__header">
+                                <span class="text-light-medium-21">Illustrations</span>
+                                <span class="text-light-medium-21 task-percent">6/10</span>
+                            </div>
+                            <div class="progress-percentage__content__task__bar ">
+                                <div class="progress-bar progress-bar-bg-green"></div>
+                            </div>
+                        </div>
+                        <div class="progress-percentage__content__task">
+                            <div class="progress-percentage__content__task__header">
+                                <span class="text-light-medium-21">UI Design</span>
+                                <span class="text-light-medium-21 task-percent">2/7</span>
+                            </div>
+
+                            <div class="progress-percentage__content__task__bar ">
+                                <div class="progress-bar progress-bar-bg-blue"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" buttons">
+                    <button class="btn normal">Normal Button</button>
+                    <button class="btn loading">
+                        <i class="fa-solid fa-spinner"></i>
+                        Loading Button</button>
+                    <button class="btn secondary">Secondary Button</button>
+                </div>
+
+            </div>
+
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
