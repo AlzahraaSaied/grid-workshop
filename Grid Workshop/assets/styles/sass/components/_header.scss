@@ -1,0 +1,80 @@
+@use "../shared/search-bar";
+@import "../utlis/colors";
+@import "../shared/extend";
+
+header {
+  box-shadow: 0px 30px 60px 0px #20385526;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $white;
+  .container {
+    width: 90%;
+    margin: 0 auto;
+
+    .header__content {
+     @extend %d-flex-between;
+      .header__content__properties {
+        width: 626px;
+      }
+      h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $sky-blue;
+        span {
+          background-color: $sky-blue;
+          width: 28px;
+          height: 28px;
+          margin-right: 10px;
+          @extend %d-flex-center-center;
+          border-radius: 50%;
+          color: $white;
+        }
+      }
+
+      ul {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: $user-color;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 13px;
+          letter-spacing: 0.5px;
+          padding-left: 10px;
+          &.active {
+            color: $sky-blue;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 13px;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: "480px") {
+  header {
+    .header__content__properties form input[type="text"] {
+      display: none;
+    }
+    ul {
+      display: flex;
+      gap: 15px;
+    }
+  }
+}
+
+@media (min-width: "1000px") {
+  header {
+    .header__content__properties form input[type="text"] {
+      display: block;
+    }
+  }
+}

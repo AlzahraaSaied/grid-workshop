@@ -1,0 +1,29 @@
+@import "../shared/mixinbuttons";
+@import "../utlis/colors";
+
+.buttons{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
+}
+ .btn.normal {
+    @include button-style($calm-purple, $white); 
+} 
+
+ .btn.loading {
+    @include button-style($light-periwinkle, $calm-purple);
+
+    i{
+        margin-right: 10px;
+    }
+}
+
+.btn.secondary {
+    @include button-style(transparent, $calm-purple, 1px solid $calm-purple); 
+}
+
+.btn.secondary:hover {
+    background-color: $light-periwinkle; 
+}

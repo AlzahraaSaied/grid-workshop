@@ -1,0 +1,52 @@
+@import "../shared/card";
+@import "../utlis/colors";
+@import "../shared/extend";
+.progress-percentage {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 40px;
+  
+
+    .progress-percentage__content {
+      margin-top: 20px; 
+      .progress-percentage__content__task {
+        span{
+            color: $user-color;
+        }
+        .task-percent{
+            color: $user-opacity;
+        }
+        display: flex; 
+        gap: 15px;
+        flex-direction: column;
+        margin-bottom: 15px;
+        .progress-percentage__content__task__header{
+          @extend %d-flex-between;
+        }
+        .progress-percentage__content__task__bar {
+          flex-grow: 1; 
+          background-color: $light-sky-blue; 
+          border-radius: 4px; 
+          height: 8px; 
+
+          .progress-bar {
+            height: 100%; 
+            border-radius: 4px;
+            
+           
+          }
+          .progress-bar-bg-purple{
+            background-color: $magenta-pink;
+            width: 37.5%;
+        }
+        .progress-bar-bg-green{
+            background-color: $emerald-green;
+            width: 60%;
+        }.progress-bar-bg-blue{
+            background-color: $sky-blue;
+            width: 28.57%;
+        }
+        }
+      }
+    }
+  }

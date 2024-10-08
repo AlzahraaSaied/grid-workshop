@@ -1,0 +1,41 @@
+@use "../shared/card";
+@import "../utlis/colors";
+@import "../shared/extend";
+.activity{
+    margin-top: 40px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    .activity__item{
+        @extend %d-flex-center;
+        .activity__item__content{
+            margin-top: 20px;
+            
+            p span{
+                font-weight: bolder;
+            }
+            .date{
+               color: $select-opacity;
+            }
+        }
+        .icon{
+           
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            @extend %d-flex-center-center;
+            margin-right: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .bg-blue{
+            background-color: $message-color;
+        }
+        .bg-purple{
+            background-color: $calm-purple;
+        }
+        .bg-orange{
+            background-color: $golden-yellow;
+        }
+    }
+
+}

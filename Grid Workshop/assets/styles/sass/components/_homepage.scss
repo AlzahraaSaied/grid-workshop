@@ -1,0 +1,88 @@
+@import "../shared/card";
+@import "../utlis/colors";
+@import "../shared/extend";
+
+.homepage{
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .homepage__content{
+        position: relative;
+        p{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .ellipsis {
+            position: absolute;
+            top: 0;
+            color: $icon-color;
+            right: 2px;
+            cursor: pointer;
+           
+        }
+        .homepage__content_properties{
+            color: $light-gray-blue;
+            padding-left: 5px;
+            margin-top: 14px;
+            i{
+                margin-right: 10px;
+            }
+        }
+        p{
+            line-height: 21px;
+        }
+        .progress{
+            @extend %d-flex-between;
+        }
+        .progress-percentage__content__task__bar {
+            flex-grow: 1; 
+            background-color: #e0e0e0; 
+            border-radius: 4px; 
+            height: 8px; 
+            margin-top: 12px;
+        
+            .progress-bar {
+              height: 100%; 
+              border-radius: 4px;
+              
+             
+            }
+            .progress-bar-bg-green{
+              background-color: $emerald-green;
+              width: 37.5%;
+          }}
+        .user-info{
+            margin-top: 12px;
+            @extend %d-flex-between;
+        }
+        .user_photos{
+            display: flex;
+            align-items: center;
+            
+            .user__photo-primary {
+                position: relative;
+                z-index: 3;
+            }
+            .user__photo-secondary{
+                position: absolute;
+                z-index: 2;
+                left: 30px; 
+            }
+            .user__photo-last{
+                position: absolute;
+                z-index: 1;
+                left: 65px;
+            }
+            span{
+                margin-left: 70px;
+                color: $user-opacity;
+
+                
+            }
+          
+           }
+           
+    }
+  
+}
+

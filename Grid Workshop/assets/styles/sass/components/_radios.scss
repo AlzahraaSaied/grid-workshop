@@ -1,0 +1,93 @@
+@use "../shared/card";
+@import "../utlis/colors";
+@import "../shared/extend";
+.task {
+  margin-top: 40px;
+  padding-top: 30px;
+    .task-item {
+      @extend %d-flex-center;
+      padding: 10px 0;
+      border-bottom: 1px solid #eaeaea;
+  
+      &:last-child {
+        border-bottom: none;
+      }
+  
+      input[type="radio"] {
+        display: none; 
+      
+      }
+      
+      label {
+        position: relative;
+        padding-left: 30px; 
+        cursor: pointer; 
+      }
+
+      label::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px; 
+        height: 20px; 
+        border: 2px solid $sky-blue; 
+        border-radius: 50%; 
+       background-color: $light-sky-blue;
+      }
+
+      input[type="radio"]:checked + label::before {
+        border-color: $sky-blue; 
+        background-color:$sky-blue ; 
+    }
+      
+      input[type="radio"]:checked + label::after {
+        content: '✓'; 
+        position: absolute;
+        left: 6px; 
+        top: 50%;
+        transform: translateY(-50%);
+        color: $white;
+        font-size: 16px;
+        font-weight: bold; 
+      }
+
+      input[type="radio"]:checked + label .task-name {
+        color: $sky-blue; 
+      }
+      
+  
+      label {
+        width: 100%;
+       @extend %d-flex-center;
+        cursor: pointer;
+        position: relative;
+  
+        .task-info {
+          @extend %d-flex-between;
+          width: 100%;
+          padding: 5px;
+          transition: background-color 0.3s ease;
+  
+          .task-details {
+            .task-name {
+              color:$user-opacity;
+              
+            }
+  
+            .task-date {
+              color: $select-opacity;
+            }
+          }
+  
+          .user-img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,51 @@
+@use "../shared/card";
+@import "../shared/search-bar";
+@import "../utlis/colors";
+@import "../shared/extend";
+
+.select {
+    margin-top: 40px;
+    h4,h3{
+        color:  $user-color;
+        
+    }
+    i{
+        color:  $light-gray-blue;
+        cursor: pointer;
+    }
+    .select__task{
+        @extend %d-flex-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        
+        .select__task__header{
+            @extend %d-flex-center;
+            gap: 10px;
+            
+        }
+    }
+    .select__search{
+        display: flex;
+        flex-direction: column;
+       /*  gap: 10px; */
+        padding-top: 28px;
+        padding-bottom: 28px;
+        margin-top: 20px;
+        .select__user{
+            padding-top: 20px;
+            @extend %d-flex-between;
+            .user__properties{
+                @extend %d-flex-center;
+                gap: 10px;
+            }
+            span{
+                color: $select-opacity;
+            }
+           
+        }
+        
+        
+    }
+}
+

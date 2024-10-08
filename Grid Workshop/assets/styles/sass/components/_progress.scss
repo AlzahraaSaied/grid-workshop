@@ -1,0 +1,84 @@
+@use "../shared/card";
+@import "../utlis/colors";
+@import "../shared/extend";
+
+.progresses {
+
+  padding: 20px;
+  position: relative;
+  margin-top: 40px;
+
+
+
+  i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: $icon-color;
+    cursor: pointer;
+  }
+
+  p {
+    color: $select-opacity;
+    margin-top: 12px;
+    margin-bottom: 40px;
+  }
+
+  .single-chart {
+    @extend %d-flex-center-center;
+    position: relative;
+    margin-bottom: 30px;
+
+    .circular-chart {
+        max-width: 150px;
+        max-height: 150px;
+        transform: rotate(180deg);
+
+        .circle-bg {
+            fill: none;
+            stroke: $medium-gray;
+            stroke-width: 2;
+        }
+
+        .circle {
+            fill: none;
+            stroke-width: 2.8;
+            stroke-linecap: round;
+            stroke: $emerald-green;
+            stroke-dasharray: 75, 100; // Semi-circle progress (75% complete)
+            animation: progress 1s ease-out forwards;
+        }
+    }
+
+    .percentage  {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $forest-green;
+        font-weight: bold;
+        transform: translate(-50%, -50%);
+
+        
+    }
+    .mission{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $user-opacity;
+        transform: translate(-50%, -50%) 
+
+    }
+}
+
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+  100% {
+    stroke-dasharray: 60, 100;
+  }
+}
